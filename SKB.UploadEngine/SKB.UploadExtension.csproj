@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{265D6221-0E5E-4226-8067-1F97BA024A38}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SKB.UploadExtension</RootNamespace>
+    <AssemblyName>SKB.UploadExtension</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SKB.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocsVision.BackOffice.ObjectModel">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\BaseObjects\DocsVision.BackOffice.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DocsVision.BackOffice.WinForms">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\BaseObjects\DocsVision.BackOffice.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DocsVision.Platform">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\DocsVision.Platform.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DocsVision.Platform.CardLib">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\DocsVision.Platform.CardLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DocsVision.Platform.Extensibility, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7148afe997f90519, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\DocsVision.Platform.Extensibility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DocsVision.Platform.ObjectManager">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\DocsVision.Platform.ObjectManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DocsVision.Platform.ObjectModel, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7148afe997f90519, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\DocsVision.Platform.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DocsVision.Platform.StorageServer">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\DocsVision.Platform.StorageServer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DocsVision.Platform.StorageServer.Data">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\DocsVision.Platform.StorageServer.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DocsVision.Platform.StorageServer.Runtime">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\DocsVision.Platform.StorageServer.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DocsVision.TakeOffice.CardLib">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\TakeOffice\DocsVision.TakeOffice.CardLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DocsVision.TakeOffice.ObjectModel">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\TakeOffice\DocsVision.TakeOffice.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\..\..\NLog.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SKB.Archive">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\SKB.Archive.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SKB.Base">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\SKB.Base.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DocumentsRegistrar.cs" />
+    <Compile Include="Protocol.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Impersonator.cs" />
+    <Compile Include="ServerExtension.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="SKB.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Settings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

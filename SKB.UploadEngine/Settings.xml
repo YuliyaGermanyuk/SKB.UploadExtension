@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <domain>SKB</domain>
+  <serverName>DV5</serverName>
+  <archiveName>ARCHIVE</archiveName>
+  <archiveTempName>ARCTEMP</archiveTempName>
+  <archiveDeleteName>ARCDEL</archiveDeleteName>
+  <matrixPath cardSheetName="CardRights" folderSheetName="FolderRights">\\DV5\ARCHIVE\AccessMatrix.xlsx</matrixPath>
+</settings>
